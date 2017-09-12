@@ -8,6 +8,8 @@ config :example_phx, ExamplePhxWeb.Endpoint,
 
 config :example_phx, :sql_sandbox, true
 
+config :wallaby, driver: Wallaby.Experimental.Chrome
+
 # Print only warnings and errors during test
 config :logger, level: :warn
 

@@ -1,4 +1,4 @@
-defmodule ExamplePhx.FeatureCase do
+defmodule ExamplePhxWeb.FeatureCase do
   use ExUnit.CaseTemplate
 
   using do
@@ -10,7 +10,7 @@ defmodule ExamplePhx.FeatureCase do
       import Ecto.Changeset
       import Ecto.Query
 
-      import ExamplePhx.Router.Helpers
+      import ExamplePhxWeb.Router.Helpers
     end
   end
 
