@@ -1,6 +1,10 @@
 defmodule ExamplePhxWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :example_phx
 
+  if Application.get_env(:example_phx, :sql_sandbox) do
+    plug Phoenix.Ecto.SQL.Sandbox
+  end
+
   socket "/socket", ExamplePhxWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.

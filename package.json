@@ -38,5 +38,7 @@
     "watch": "webpack --watch-stdin --progress --color",
     "webpack": "webpack -p"
   },
-  "dependencies": {}
+  "dependencies": {
+    "preact-compat": "^3.17.0"
+  }
 }
